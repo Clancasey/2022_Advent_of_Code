@@ -54,9 +54,3 @@ while current_line:
 
 print('Final priority score part 1: ' + str(score))
 print('Final priority score part 2: ' + str(part2_score))
-
-# switch case2 in current line depending on if first, second, or third elf's rucksack
-# first elf: create same item_list as in part 1
-# second elf: create a new list depending on all items that are common across first & second elf
-# third elf: find item that is common between the new list and the thirf elf's rucksack
-# calculate priority the same way.
