@@ -12,4 +12,4 @@ for i in range(len(input)):
         solution = i+1
         break
 
-print("Part 1 solution: " + str(solution) + ", with marker: " + input[solution-14:solution])
+print("Part 2 solution: " + str(solution) + ", with marker: " + input[solution-14:solution])
