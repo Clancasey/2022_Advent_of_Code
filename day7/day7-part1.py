@@ -1,4 +1,4 @@
-input = open("input.txt","r")
+input = open("day7/input.txt","r")
 
 for line in input:
     line = line.strip()
