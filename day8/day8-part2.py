@@ -1,35 +1,31 @@
 def check_north(input,row,col,tree_height):
-    score = 0
-    if row == 0: 
-        return score
     score = 1 
+    if row == 0: 
+        return 0
     if input[row-1][col] < tree_height:
         score += check_north(input,row-1,col,tree_height)
     return score
 
 def check_south(input,row,col,tree_height):
-    score = 0
-    if row == len(input)-1: 
-        return score
     score = 1 
+    if row == len(input)-1: 
+        return 0
     if input[row+1][col] < tree_height:
         score += check_south(input,row+1,col,tree_height)
     return score
 
 def check_east(input,row,col,tree_height):
-    score = 0
-    if col == len(input[0])-1: 
-        return score
     score = 1 
+    if col == len(input[0])-1: 
+        return 0
     if input[row][col+1] < tree_height:
         score += check_east(input,row,col+1,tree_height)
     return score
 
 def check_west(input,row,col,tree_height):
-    score = 0
-    if col == 0: 
-        return score
     score = 1 
+    if col == 0: 
+        return 0
     if input[row][col-1] < tree_height:
         score += check_west(input,row,col-1,tree_height)
     return score
